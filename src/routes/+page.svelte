@@ -78,32 +78,18 @@
             location="London, United Kingdom">
             <p class="text">A studentship for the duration of my studies as postgraduate research student at King's College London</p>
         </CVElement>
-        <h2 class="text-2xl sm:text-3xl">Work Experience</h2>
-        <CVElement 
-            name="Internship - Software Engineering" 
-            startDate={new Date("2022-04")} 
-            endDate={new Date("2022-07")}
-            institution="Austrian Ministry of Defence"
-            location="Vienna, Austria">
-            <p class="text">Software-development using Kotlin</p>
-        </CVElement>
-        <CVElement 
-            name="Mandatory Military Service" 
-            startDate={new Date("2021-10")} 
-            endDate={new Date("2022-04")}
-            institution="Austrian Armed Forces"
-            location="Vienna, Austria"/>
-        <CVElement 
-            name="Internship - Software Engineering" 
-            startDate={new Date("2021-06")} 
-            endDate={new Date("2021-08")}
-            institution="Scientific Games"
-            location="Vienna, Austria">
-            Software-development using Java
-        </CVElement>
+    </Section>
+    <Section name="Biography">
+        <p>I did a few internships from summer 2021 to 2022.</p>
     </Section>
     <Section name="Skills">
         <Skill name="Programming" details="Java, Scala, Kotlin, TypeScript"/>
         <Skill name="Interactive Theorem Proving" details="Isabelle/HOL"/>
+    </Section>
+    <Section name="Additional Information">
+        <p>The source code for this site can be found on 
+            <a href="https://github.com/david-wang-0/david-wang" 
+            class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
+            Github</a></p>
     </Section>
 </div>
