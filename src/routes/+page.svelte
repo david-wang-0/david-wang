@@ -79,7 +79,7 @@
             institution="King's College London - Faculty of Natural, Mathematical, and Engineering Sciences"
             institutionLink="https://www.kcl.ac.uk/nmes"
             location="London, United Kingdom">
-            <p class="text">A studentship for the duration of my studies as postgraduate research student at King's College London</p>
+            <p class="text">A studentship for the duration of my studies as postgraduate research student at King's College London.</p>
         </CVElement>
     </Section>
     <Section name="Biography">
@@ -93,6 +93,6 @@
         <p>The source code for this site can be found on 
             <a href="https://github.com/david-wang-0/david-wang" 
             class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
-            GitHub</a></p>
+            GitHub</a>.</p>
     </Section>
 </div>
