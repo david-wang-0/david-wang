@@ -11,7 +11,7 @@
 <div class="m-auto max-w-screen-lg p-auto">
     <h1 class="text-6xl my-4 p-0">David Wang</h1>
 
-    <Section name="About">
+    <Section name="Contact">
         <KeyValue name="E-Mail" details="firstname.lastname@kcl.ac.uk"/>
     </Section>
     <Section name="About">
