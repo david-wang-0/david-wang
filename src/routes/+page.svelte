@@ -1,6 +1,6 @@
 <script lang="ts">
     import CVElement from '$lib/components/CVElement.svelte';
-    import Skill from '$lib/components/Skill.svelte';
+    import KeyValue from '$lib/components/KeyValue.svelte';
     import Section from '$lib/components/Section.svelte';
 </script>
 
@@ -11,6 +11,9 @@
 <div class="m-auto max-w-screen-lg p-auto">
     <h1 class="text-6xl my-4 p-0">David Wang</h1>
 
+    <Section name="About">
+        <KeyValue name="E-Mail" details="firstname.lastname@kcl.ac.uk"/>
+    </Section>
     <Section name="About">
         <p class="text">I like mathematics and logic, because once you understand a proof, you know you understand it and if you don't, you know you don't. It feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
         <p class="text">This lead me to my current research area and the topic <em class="italic">formal reasoning about GOLOG programs</em>. It combines formal logic, programming language semantics, formal verification, and AI planning.</p>
@@ -83,13 +86,13 @@
         <p>I did a few internships from summer 2021 to 2022.</p>
     </Section>
     <Section name="Skills">
-        <Skill name="Programming" details="Java, Scala, Kotlin, TypeScript"/>
-        <Skill name="Interactive Theorem Proving" details="Isabelle/HOL"/>
+        <KeyValue name="Programming" details="Java, Scala, Kotlin, TypeScript"/>
+        <KeyValue name="Interactive Theorem Proving" details="Isabelle/HOL"/>
     </Section>
     <Section name="Additional Information">
         <p>The source code for this site can be found on 
             <a href="https://github.com/david-wang-0/david-wang" 
             class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
-            Github</a></p>
+            GitHub</a></p>
     </Section>
 </div>
