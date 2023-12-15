@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="m-auto max-w-screen-lg p-auto">
-    <h1 class="text-6xl my-4 p-0">David Wang</h1>
+    <h1 class="text-4xl sm:text-5xl mx-1 my-4 p-0">David Wang</h1>
 
     <Section name="Contact">
         <KeyValueList>
@@ -19,7 +19,7 @@
         </KeyValueList>
     </Section>
     <Section name="About">
-        <p class="text">I like logic and interactive theorem proving because I like to really understand something beginning at the basics. It also feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
+        <p class="text">I like logic and interactive theorem proving because I like to really understand something from the basics. It also feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
         <p class="text">This lead me to my current research area and the topic <em class="italic">formal reasoning about GOLOG programs</em>. It combines formal logic, programming language semantics, formal verification, and AI planning.</p>
     </Section>
     <Section name="Research Experience">
