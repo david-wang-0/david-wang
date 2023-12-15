@@ -16,20 +16,20 @@
         <div class="flex-auto justify-center"/>
         <h4 class="flex space-x-1 flex-none justify-end">
             {#if startDate != null}
-                <span class="flex flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
-                <span class="flex flex-auto justify-center"> - </span>
+                <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
+                <span class="justify-center"> - </span>
             {/if}
             {#if endDate != null}
-                <span class="flex flex-none justify-end">{endDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
+                <span class="flex-none justify-end">{endDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
             {:else}
-                <span class="flex flex-none justify-end">ongoing</span>
+                <span class="flex-none justify-end">ongoing</span>
             {/if}
         </h4>
     </div>
 
     <div class="flex flex-nowrap space-x-2 text-base my-1">
         {#if institution != null}
-            <h4 class="flex shrink justify-left italic">
+            <h4 class="shrink justify-left italic">
             {#if institutionLink != null}
                 <a href="{institutionLink}" 
                     class={link_style}>
@@ -41,11 +41,11 @@
             </h4>
         {/if}
         {#if institution != null && location != null} 
-            <div class="flex flex-none hidden md:block justify-left">|</div>
-            <div class="flex flex-auto justify-center md:hidden"/>
+            <div class="flex-none hidden md:block justify-left">|</div>
+            <div class="justify-center md:hidden"/>
         {/if}
         {#if location != null}
-            <h4 class="flex flex-none justify-right md:justify-left italic">{location}</h4>
+            <h4 class="flex-none justify-right md:justify-left italic">{location}</h4>
         {/if}
     </div>
     <slot/>
