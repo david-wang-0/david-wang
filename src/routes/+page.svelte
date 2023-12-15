@@ -1,7 +1,9 @@
 <script lang="ts">
     import CVElement from '$lib/components/CVElement.svelte';
     import KeyValue from '$lib/components/KeyValue.svelte';
+	import KeyValueList from '$lib/components/KeyValueList.svelte';
     import Section from '$lib/components/Section.svelte';
+    import { link_style } from '../theme/styles';
 </script>
 
 <svelte:head>
@@ -12,10 +14,12 @@
     <h1 class="text-6xl my-4 p-0">David Wang</h1>
 
     <Section name="Contact">
-        <KeyValue name="E-Mail" details="firstname.lastname@kcl.ac.uk"/>
+        <KeyValueList>
+            <KeyValue name="E-Mail" details="firstname.lastname@kcl.ac.uk"/>
+        </KeyValueList>
     </Section>
     <Section name="About">
-        <p class="text">I like mathematics and logic, because once you understand a proof, you know you understand it and if you don't, you know you don't. It feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
+        <p class="text">I like logic and interactive theorem proving because I like to really understand something beginning at the basics. It also feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
         <p class="text">This lead me to my current research area and the topic <em class="italic">formal reasoning about GOLOG programs</em>. It combines formal logic, programming language semantics, formal verification, and AI planning.</p>
     </Section>
     <Section name="Research Experience">
@@ -28,12 +32,12 @@
             <p class="text">
                 Researching formal reasoning about 
                 <a href="https://en.wikipedia.org/wiki/GOLOG" 
-                    class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
+                    class={link_style}>
                     GOLOG
                 </a> 
                 programs under the supervision of 
                 <a href="https://mabdula.github.io/" 
-                    class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
+                    class={link_style}>
                     Dr Mohammad Abdulaziz
                 </a>. 
                 GOLOG is a high-level agent modelling language meant to capture human intuition and common-sense reasoning in dynamic situations. The research aims to formalise GOLOG's semantics using techniques applied to programming languages as well as the situation calculus within the Isabelle/HOL theorem prover. It combines various applications of logic, from philosophy to AI.
@@ -86,13 +90,15 @@
         <p>I did a few internships from summer 2021 to 2022.</p>
     </Section>
     <Section name="Skills">
-        <KeyValue name="Programming" details="Java, Scala, Kotlin, TypeScript"/>
-        <KeyValue name="Interactive Theorem Proving" details="Isabelle/HOL"/>
+        <KeyValueList>
+            <KeyValue name="Programming" details="Java, Scala, Kotlin, TypeScript"/>
+            <KeyValue name="Interactive Theorem Proving" details="Isabelle/HOL"/>
+        </KeyValueList>
     </Section>
     <Section name="Additional Information">
         <p>The source code for this site can be found on 
             <a href="https://github.com/david-wang-0/david-wang" 
-            class="underline underline-offset-4 decoration-cyan-500 dark:decoration-cyan-400 decoration-2 hover:text-cyan-500 hover:dark:text-cyan-400">
+            class={link_style}>
             GitHub</a>.</p>
     </Section>
 </div>
