@@ -14,17 +14,17 @@
         <h4 class="flex space-x-1 flex-none justify-end">
             {#if startDate != null}
                 {#if longDate}
-                    <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long', day: '2-digit'})}</span>
+                    <span class="flex-none justify-start">{startDate.toLocaleString('default', {year: 'numeric', month: 'long', day: '2-digit'})}</span>
                 {:else}
-                    <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long'})}</span>
+                    <span class="flex-none justify-start">{startDate.toLocaleString('default', {year: 'numeric', month: 'long'})}</span>
                 {/if}
                 <span class="justify-center"> - </span>
             {/if}
             {#if endDate != null}
                 {#if longDate}
-                    <span class="flex-none justify-start">{endDate.toLocaleString('default', { year: 'numeric', month: 'long', day: '2-digit'})}</span>
+                    <span class="flex-none justify-start">{endDate.toLocaleString('default', {year: 'numeric', month: 'long', day: '2-digit'})}</span>
                 {:else}
-                    <span class="flex-none justify-start">{endDate.toLocaleString('default', { year: 'numeric', month: 'long'})}</span>
+                    <span class="flex-none justify-start">{endDate.toLocaleString('default', {year: 'numeric', month: 'long'})}</span>
                 {/if}
             {:else}
                 <span class="flex-none justify-end">ongoing</span>
