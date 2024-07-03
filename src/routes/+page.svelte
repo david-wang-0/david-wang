@@ -19,75 +19,85 @@
         </KeyValueList>
     </Section>
     <Section name="About">
-        <p class="text">I like logic and interactive theorem proving because I like to really understand something from the basics. It also feels good to be certain of things, even after you have forgotten the details of how you came to that conclusion.</p>
-        <p class="text">This lead me to my current research area and the topic <em class="italic">formal reasoning about GOLOG programs</em>. It combines formal logic, programming language semantics, formal verification, and AI planning.</p>
+        <p class="text">
+            I currently perform research on the formal semantics of planning formalisms, such as 
+            <a href="https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language" class={link_style}>PDDL</a> and 
+            <a href="https://en.wikipedia.org/wiki/GOLOG" class={link_style}>GOLOG</a>.
+        </p>
     </Section>
     <Section name="Research Experience">
         <CVElement
-            name="PhD research in Computer Science"
             startDate={new Date("2023-10")}
-            institution="King's College London - Department of Informatics"
-            institutionLink="https://www.kcl.ac.uk/informatics/"
             location="London, United Kingdom">
-            <p class="text">
-                Researching formal reasoning about 
-                <a href="https://en.wikipedia.org/wiki/GOLOG" 
-                    class={link_style}>
-                    GOLOG
-                </a> 
-                programs under the supervision of 
-                <a href="https://mabdula.github.io/" 
-                    class={link_style}>
-                    Dr Mohammad Abdulaziz
-                </a>. 
-                GOLOG is a high-level agent modelling language meant to capture human intuition and common-sense reasoning in dynamic situations. The research aims to formalise GOLOG's semantics using techniques applied to programming languages as well as the situation calculus within the Isabelle/HOL theorem prover. It combines various applications of logic, from philosophy to AI.
+            <span slot="title">PhD research in Computer Science</span>
+            <a slot="institution" href="https://www.kcl.ac.uk/informatics/" class={link_style}>
+                King's College London - Department of Informatics
+            </a>
+            <p slot="content" class="text">
+                I currently perform research on the formal semantics of planning formalisms, such as 
+                <a href="https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language" class={link_style}>PDDL</a> and 
+                <a href="https://en.wikipedia.org/wiki/GOLOG" class={link_style}>GOLOG</a>
+                under the supervision of <a href="https://mabdula.github.io/" class={link_style}>Dr Mohammad Abdulaziz</a>. 
             </p>
         </CVElement>
         <CVElement
-            name="Bachelor of Science - Final Year Project"
             startDate={new Date("2022-09")}
             endDate={new Date("2023-04")}
-            institution="King's College London"
-            institutionLink="https://www.kcl.ac.uk/"
             location="London, United Kingdom">
-            <p class="text">
-                Regular Expressions, Lexing, Derivatives
-            </p>
+            <span slot="title">Bachelor of Science - Final Year Project</span>
+            <a slot="institution" href="https://www.kcl.ac.uk/" class={link_style}>King's College London</a>
+            <p slot="content" class="text">Regular Expressions, Lexing, Derivatives</p>
         </CVElement>
     </Section>
     <Section name="Education">
         <CVElement 
-            name="Computer Science Research MPhil/PhD" 
             startDate={new Date("2023-10")}
-            institution="King's College London - Department of Informatics"
-            institutionLink="https://www.kcl.ac.uk/informatics/"
-            location="London, United Kingdom"/>
+            location="London, United Kingdom">
+            <span slot="title">Computer Science Research MPhil/PhD</span>
+            <a slot="institution" href="https://www.kcl.ac.uk/informatics/" class={link_style}>
+                King's College London - Department of Informatics
+            </a>
+        </CVElement>
         <CVElement 
-            name="Bachelor of Science with Honours in Computer Science" 
             startDate={new Date("2019-09")} 
             endDate={new Date("2023-07")}
-            institution="King's College London"
-            institutionLink="https://www.kcl.ac.uk/"
-            location="London, United Kingdom"/>
-        <CVElement 
-            name="IB Diploma"
-            startDate={new Date("2012-09")} 
-            endDate={new Date("2019-07")}
-            institution="Vienna International School"
-            institutionLink="https://www.vis.ac.at/"
-            location="Vienna, Austria"/>
-    </Section>
-    <Section name=Awards>
-        <CVElement name="NMES Faculty Studentship"
-            startDate={new Date("2023-10")}
-            institution="King's College London - Faculty of Natural, Mathematical, and Engineering Sciences"
-            institutionLink="https://www.kcl.ac.uk/nmes"
             location="London, United Kingdom">
-            <p class="text">A studentship for the duration of my studies as postgraduate research student at King's College London.</p>
+            <span slot="title">Bachelor of Science with Honours in Computer Science</span>
+            <a slot="institution" href="https://www.kcl.ac.uk/" class={link_style}>King's College London</a>
         </CVElement>
     </Section>
-    <Section name="Biography">
-        <p>I did a few internships from summer 2021 to 2022.</p>
+    <Section name="Awards, Workshops">
+        <CVElement
+            startDate={new Date("2023-10")}
+            location="London, United Kingdom">
+            <span slot="title">NMES Faculty Studentship</span>
+            <a slot="institution" href="https://www.kcl.ac.uk/nmes/" class={link_style}>
+                King's College London - Faculty of Natural, Mathematical, and Engineering Sciences
+            </a>
+            <p slot="content" class="text">A studentship for the duration of my studies as postgraduate research student at King's College London.</p>
+        </CVElement>
+        <CVElement
+            startDate={new Date("2024-05-13")}
+            endDate={new Date("2024-05-17")}
+            location="Bonn, Germany">
+            <a slot="title" href="https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics" class={link_style}>
+                Trimester Programme - Prospects of Formal Mathematics - School on Formal Mathematics
+            </a>
+            <a slot="institution" href="https://www.mathematics.uni-bonn.de/en" class={link_style}>
+                University of Bonn - Hausdorff Research Institute for Mathematics
+            </a>
+        </CVElement>
+        <CVElement
+            startDate={new Date("2024-06-17")}
+            endDate={new Date("2024-06-28")}
+            location="Bonn, Germany">
+            <a slot="title" href="https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics" class={link_style}>
+                Trimester Programme - Prospects of Formal Mathematics
+            </a>
+            <a slot="institution" href="https://www.mathematics.uni-bonn.de/en" class={link_style}>
+                University of Bonn - Hausdorff Research Institute for Mathematics
+            </a>
+        </CVElement>
     </Section>
     <Section name="Skills">
         <KeyValueList>
@@ -96,9 +106,8 @@
         </KeyValueList>
     </Section>
     <Section name="Additional Information">
-        <p>The source code for this site can be found on 
-            <a href="https://github.com/david-wang-0/david-wang" 
-            class={link_style}>
-            GitHub</a>.</p>
+        <p style="text">
+            Some things that I do can be found on <a href="https://github.com/david-wang-0/david-wang" class={link_style}>GitHub</a>.
+        </p>
     </Section>
 </div>
