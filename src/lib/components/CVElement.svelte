@@ -2,6 +2,7 @@
     export let startDate: Date | null = null;
     export let endDate: Date | null = null;
     export let location: string | null = null;
+    export let longDate: boolean = false;
 </script>
 
 <div class="grid grid-cols-1 gap-y-2">
@@ -12,11 +13,19 @@
         <div class="flex-auto justify-center"/>
         <h4 class="flex space-x-1 flex-none justify-end">
             {#if startDate != null}
-                <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
+                {#if longDate}
+                    <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long', day: '2-digit'})}</span>
+                {:else}
+                    <span class="flex-none justify-start">{startDate.toLocaleString('default', { year: 'numeric', month: 'long'})}</span>
+                {/if}
                 <span class="justify-center"> - </span>
             {/if}
             {#if endDate != null}
-                <span class="flex-none justify-end">{endDate.toLocaleString('default', { year: 'numeric', month: 'long' })}</span>
+                {#if longDate}
+                    <span class="flex-none justify-start">{endDate.toLocaleString('default', { year: 'numeric', month: 'long', day: '2-digit'})}</span>
+                {:else}
+                    <span class="flex-none justify-start">{endDate.toLocaleString('default', { year: 'numeric', month: 'long'})}</span>
+                {/if}
             {:else}
                 <span class="flex-none justify-end">ongoing</span>
             {/if}

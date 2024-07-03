@@ -79,7 +79,8 @@
         <CVElement
             startDate={new Date("2024-05-13")}
             endDate={new Date("2024-05-17")}
-            location="Bonn, Germany">
+            location="Bonn, Germany"
+            longDate={true}>
             <a slot="title" href="https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics" class={link_style}>
                 Trimester Programme - Prospects of Formal Mathematics - School on Formal Mathematics
             </a>
@@ -90,7 +91,8 @@
         <CVElement
             startDate={new Date("2024-06-17")}
             endDate={new Date("2024-06-28")}
-            location="Bonn, Germany">
+            location="Bonn, Germany"
+            longDate={true}>
             <a slot="title" href="https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics" class={link_style}>
                 Trimester Programme - Prospects of Formal Mathematics
             </a>
