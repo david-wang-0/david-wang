@@ -68,15 +68,6 @@
     </Section>
     <Section name="Awards, Workshops">
         <CVElement
-            startDate={new Date("2023-10")}
-            location="London, United Kingdom">
-            <span slot="title">NMES Faculty Studentship</span>
-            <a slot="institution" href="https://www.kcl.ac.uk/nmes/" class={link_style}>
-                King's College London - Faculty of Natural, Mathematical, and Engineering Sciences
-            </a>
-            <p slot="content" class="text">A studentship for the duration of my studies as postgraduate research student at King's College London.</p>
-        </CVElement>
-        <CVElement
             startDate={new Date("2024-05-13")}
             endDate={new Date("2024-05-17")}
             location="Bonn, Germany"
