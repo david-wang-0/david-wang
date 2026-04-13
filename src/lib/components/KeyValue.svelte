@@ -5,4 +5,4 @@
 
 <h3 class="break-after-avoid">{name}: </h3> 
 <h4>{details}</h4>
-<div class="h-0 basis-full md:hidden"/>
+<div class="h-0 basis-full md:hidden"></div>

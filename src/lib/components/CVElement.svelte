@@ -10,7 +10,7 @@
         <h3 class="flex flex-initial justify-left font-extrabold">
             <slot name="title"/>
         </h3>
-        <div class="flex-auto justify-center"/>
+        <div class="flex-auto justify-center"></div>
         <h4 class="flex space-x-1 flex-none justify-end">
             {#if startDate != null}
                 {#if longDate}
@@ -40,7 +40,7 @@
         {/if}
         {#if $$slots.institution && location != null} 
             <div class="flex-none hidden md:block justify-left">|</div>
-            <div class="justify-center md:hidden"/>
+            <div class="justify-center md:hidden"></div>
         {/if}
         {#if location != null}
             <h4 class="flex-none justify-right md:justify-left italic">{location}</h4>
